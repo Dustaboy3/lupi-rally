@@ -1853,3 +1853,23 @@ section {
 .moreBtn {
   color: white;
 }
+
+.carousel-inner {
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.caroBtn {
+  filter: invert(31%) sepia(95%) saturate(7463%) hue-rotate(358deg) brightness(92%) contrast(122%);
+}
+
+@media (max-width: 992px) {
+  .caroImg {
+    height: 60%;
+    width: 60%;
+  }
+}
