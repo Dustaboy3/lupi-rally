@@ -943,6 +943,7 @@ section {
 
 .portfolio .portfolio-item:hover .portfolio-info {
     opacity: 1;
+    height: 30px;
 }
 
 /*--------------------------------------------------------------

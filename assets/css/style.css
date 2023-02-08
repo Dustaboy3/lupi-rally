@@ -947,6 +947,7 @@ section {
 
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
+  height: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -1735,12 +1736,17 @@ section {
   display: flex;
 }
 
-.timeline-row .timeline-content .thumbs img {
+.timeline-row .timeline-content .thumbs h6 {
   margin: 5px;
   max-width: 60px;
 }
 
 .timeline-row .timeline-content .badge {
+  color: #ffffff;
+  background: linear-gradient(120deg, #000 0%, #100000 100%);
+}
+
+.timeline-row .timeline-content .hover-badge {
   color: #ffffff;
   background: linear-gradient(120deg, #fd0000 0%, #b10000 100%);
 }
@@ -1869,7 +1875,73 @@ section {
 
 @media (max-width: 992px) {
   .caroImg {
-    height: 60%;
+    height: 47px;
     width: 60%;
   }
+
+  .caroImg-zupo {
+    height: 47px;
+    width: 47px;
+  }
+
+  .caroImg-pnv {
+    height: 47px;
+    width: 112px;
+  }
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+
+.timeline-img {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.voznik-voznik {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.thumbs-center {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 3px !important;
+}
+
+.inner-left {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.inner-left .text {
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+.inner-right {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.inner-right .text {
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+.timeline-text {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
