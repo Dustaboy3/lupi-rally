@@ -1891,7 +1891,7 @@ section {
 
   .caroImg-lupi {
     height: 47px;
-    width: 60px;
+    width: 92px;
   }
 }
 
@@ -1904,6 +1904,7 @@ section {
   height: 300px;
   width: 300px;
   border-radius: 10px;
+  transition: all .2s ease-in-out;
 }
 
 .voznik-voznik {
@@ -1949,4 +1950,18 @@ section {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.timeline-img:hover {
+  transform: scale(0.9);
+}
+
+.hiddenImg {
+  display: hidden;
+}
+
+.polzek {
+  position: relative;
+  left: 2.5vw;
+  top: -10px;
 }
