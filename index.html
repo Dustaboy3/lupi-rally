@@ -71,7 +71,6 @@
       </nav>
     </div>
   </header>
-
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
     <div id="sponsorCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
@@ -143,7 +142,6 @@
     </svg>
 
   </section><!-- End Hero -->
-
   <main id="main">
 
     <!-- ======= About Section ======= -->
@@ -590,7 +588,6 @@
         <div class="moreBtnDiv">
           <a class="moreBtn" href="portfolio.html">Poglej si več</a>
         </div>
-        Aleksander
       </div>
     </section><!-- End Portfolio Section -->
 
@@ -657,6 +654,7 @@
       </div>
     </section>
 
+
     <!-- ======= Sponsor Section ======= -->
     <section id="sponsor" class="d-flex flex-column justify-content-end align-items-center">
       <div class="container">
@@ -672,7 +670,8 @@
               </a>
             </div>
             <div class="carousel-item">
-              <img class="caroImg-lupi" src="./assets/img/sponsors/lupi.png" alt="Lupi logo">
+              <img type="button" data-toggle="modal" data-target="#videoModal" class="caroImg-lupi"
+                src="./assets/img/sponsors/lupi.png" alt="Lupi logo">
             </div>
             <div class="carousel-item">
               <a href="https://www.ombra.si/" target="_blank">
@@ -710,6 +709,23 @@
         </div>
       </div>
     </section>
+
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <iframe class="youtube-video" width="auto" height="auto"
+            src="https://www.youtube.com/embed/e5XSJ2-E2Wk?autoplay=1&enablejsapi=1" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary popupButton" data-dismiss="modal"
+              onclick="closePopup()">Zapri</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -792,6 +808,13 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <!-- Template Main JS File assets/img/portfolio/Eco/tripm_edited.jpg -->
   <script src="assets/js/main.js"></script>
+  <script>
+    function closePopup() {
+      $('.youtube-video').each(function () {
+        this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+      });
+    }
+  </script>
 </body>
 
 </html>

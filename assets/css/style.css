@@ -1907,6 +1907,14 @@ section {
   transition: all .2s ease-in-out;
 }
 
+@media (max-width: 370px) {
+  .timeline-img {
+    height: 180px;
+    width: 180px;
+  }
+}
+
+
 .voznik-voznik {
   margin-right: 20px;
   margin-left: 10px;
@@ -1964,4 +1972,10 @@ section {
   position: relative;
   left: 2.5vw;
   top: -10px;
+}
+
+.popupButton {
+  background: red !important;
+  border-radius: 30px !important;
+  border: none !important;
 }
