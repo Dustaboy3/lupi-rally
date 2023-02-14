@@ -1973,3 +1973,9 @@ section {
   left: 2.5vw;
   top: -10px;
 }
+
+.popupButton {
+  background: red !important;
+  border-radius: 30px !important;
+  border: none !important;
+}
