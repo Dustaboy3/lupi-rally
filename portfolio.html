@@ -31,6 +31,9 @@
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/css/portfolio.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -64,10 +67,10 @@
                 </div>
 
                 <ul id="portfolio-flters" class="d-flex justify-content-end" data-aos="fade-up">
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-eco">eco rally</li>
-                    <li data-filter=".filter-rally">rally</li>
-                    <li data-filter=".filter-alpine">alpine</li>
+                    <li data-filter="*" class="portfolio-filters">All</li>
+                    <li data-filter=".filter-eco" class="portfolio-filters">eco rally</li>
+                    <li data-filter=".filter-rally" class="portfolio-filters">rally</li>
+                    <li data-filter=".filter-alpine" class="portfolio-filters">alpine</li>
                 </ul>
 
                 <div class="row portfolio-container" data-aos="fade-up">
@@ -364,6 +367,28 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+        $("#portfolio-flters").click(function () {
+            const activeFilter = document.getElementsByClassName("filter-active");
+            localStorage.activeFilter = activeFilter[0].innerText;
+
+            const portfolioFilters = document.getElementsByClassName("portfolio-filters");
+            for (let i = 0; i < portfolioFilters.length; i++) {
+                if (portfolioFilters[i].innerText === localStorage.activeFilter) {
+                    portfolioFilters[i].classList.add("filter-active");
+                }
+            }
+        });
+
+        $(document).ready(function () {
+            const portfolioFilters = document.getElementsByClassName("portfolio-filters");
+            for (let i = 0; i < portfolioFilters.length; i++) {
+                if (portfolioFilters[i].innerText === localStorage.activeFilter) {
+                    portfolioFilters[i].classList.add("filter-active");
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

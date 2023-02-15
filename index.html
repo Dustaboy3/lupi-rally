@@ -39,8 +39,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <meta charset="utf-8">
 </head>
 
@@ -499,10 +497,10 @@
         </div>
 
         <ul id="portfolio-flters" class="d-flex justify-content-end" data-aos="fade-up">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-eco">eco rally</li>
-          <li data-filter=".filter-rally">rally</li>
-          <li data-filter=".filter-alpine">alpine</li>
+          <li data-filter="*" class="portfolio-filters filter-active">All</li>
+          <li data-filter=".filter-eco" class="portfolio-filters">eco rally</li>
+          <li data-filter=".filter-rally" class="portfolio-filters">rally</li>
+          <li data-filter=".filter-alpine" class="portfolio-filters">alpine</li>
         </ul>
 
         <div class="row portfolio-container" data-aos="fade-up">
@@ -749,13 +747,13 @@
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>lupiracing@t-2.net</p>
+                <p>lupiracing@gmail.com</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>GSM:</h4>
-                <p>+386 51 123 123</p>
+                <p>+386 41 627 663</p>
               </div>
 
             </div>
@@ -814,6 +812,12 @@
         this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
       });
     }
+
+    $("#portfolio-flters").click(function () {
+      const activeFilter = document.getElementsByClassName("filter-active");
+      localStorage.activeFilter = activeFilter[0].innerText;
+    });
+
   </script>
 </body>
 
