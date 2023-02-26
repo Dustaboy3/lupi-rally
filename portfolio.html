@@ -343,11 +343,11 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-alpine">
-                        <div class="portfolio-img"><img src="assets/img/portfolio/Alpine/1.jpg" class="img-fluid"
+                        <div class="portfolio-img"><img src="assets/img/portfolio/Alpine/1.JPG" class="img-fluid"
                                 alt="Alpine 9">
                         </div>
                         <div class="portfolio-info">
-                            <a href="assets/img/portfolio/Alpine/1.jpg" data-gallery="alpinegal"
+                            <a href="assets/img/portfolio/Alpine/1.JPG" data-gallery="alpinegal"
                                 class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
                         </div>
                     </div>
@@ -503,7 +503,7 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-rally">
-                        <div class="portfolio-img"><img src="assets/img/portfolio/Rally/hella 2005.jpg"
+                        <div class="portfolio-img"><img src="assets/img/portfolio/Rally/hella 2005.JPG"
                                 class="img-fluid" alt="HRally 15">
                         </div>
                         <div class="portfolio-info">
@@ -583,11 +583,11 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-rally">
-                        <div class="portfolio-img"><img src="assets/img/portfolio/Rally/maribor 2004.jpg"
+                        <div class="portfolio-img"><img src="assets/img/portfolio/Rally/maribor 2004.JPG"
                                 class="img-fluid" alt="HRally 23">
                         </div>
                         <div class="portfolio-info">
-                            <a href="assets/img/portfolio/Rally/maribor 2004.jpg" data-gallery="rallygal"
+                            <a href="assets/img/portfolio/Rally/maribor 2004.JPG" data-gallery="rallygal"
                                 class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
                         </div>
                     </div>
@@ -763,11 +763,11 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-rally">
-                        <div class="portfolio-img"><img src="assets/img/portfolio/Rally/velenje.jpg" class="img-fluid"
+                        <div class="portfolio-img"><img src="assets/img/portfolio/Rally/velenje.JPG" class="img-fluid"
                                 alt="HRally 41">
                         </div>
                         <div class="portfolio-info">
-                            <a href="assets/img/portfolio/Rally/velenje.jpg" data-gallery="rallygal"
+                            <a href="assets/img/portfolio/Rally/velenje.JPG" data-gallery="rallygal"
                                 class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
                         </div>
                     </div>
@@ -839,28 +839,6 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script>
-        $("#portfolio-flters").click(function () {
-            const activeFilter = document.getElementsByClassName("filter-active");
-            localStorage.activeFilter = activeFilter[0].innerText;
-
-            const portfolioFilters = document.getElementsByClassName("portfolio-filters");
-            for (let i = 0; i < portfolioFilters.length; i++) {
-                if (portfolioFilters[i].innerText === localStorage.activeFilter) {
-                    portfolioFilters[i].classList.add("filter-active");
-                }
-            }
-        });
-
-        $(document).ready(function () {
-            const portfolioFilters = document.getElementsByClassName("portfolio-filters");
-            for (let i = 0; i < portfolioFilters.length; i++) {
-                if (portfolioFilters[i].innerText === localStorage.activeFilter) {
-                    portfolioFilters[i].classList.add("filter-active");
-                }
-            }
-        });
-    </script>
 </body>
 
 </html>
