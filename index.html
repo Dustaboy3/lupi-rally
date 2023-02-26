@@ -78,7 +78,7 @@
       <div class="carousel-item active">
         <div class="carousel-container">
           <h2 class="animate__animated animate__fadeInDown"><span>Lupi Racing</span></h2>
-          <p class="animate__animated fanimate__adeInUp">Smo ekipa rally entuziastov z več 20 letno tradicijo.</p>
+          <p class="animate__animated fanimate__adeInUp">Smo ekipa rally entuziastov z več kot 20 letno tradicijo.</p>
           <a href="#timeline" class="btn-get-started animate__animated animate__fadeInUp scrollto">Časovnica</a>
         </div>
       </div>
@@ -164,7 +164,9 @@
           <div class="col-lg-6 pt-4 pt-lg-0">Ljubljana, Slovenija
             <p>
               Kljub temu, da je ekipa mlada in skupaj tekmujemo pičla 3 leta z avtomobilom katerega nam priskrbi naš
-              generalni Pokrovitelj AC Emil Frey smo v zadnjem letu na državnem prvenstvu dosegli odlično 3. mesto.
+              generalni Pokrovitelj <a href="https://emilfrey.si/" target="_blank">AC Emil Frey</a> smo v
+              zadnjem letu na državnem prvenstvu dosegli odlično 3. mesto.
+              Pravtako smo aktivni člani kluba <a href="https://amdgorica.si/moto-klub" target="_blank">AMD Gorica</a>
             </p>
           </div>
           <div class="col-lg-12 team-list">
@@ -511,7 +513,7 @@
                 alt="Eco rally ena">
             </div>
             <div class="portfolio-info">
-              <a href="assets/img/portfolio/Eco/2211.jpg" data-gallery="portfolioGallery"
+              <a href="assets/img/portfolio/Eco/2211.jpg" data-gallery="portfolioGallery1"
                 class="portfolio-lightbox preview-link" title="Mahle 2022"><i class="bx bx-plus"></i></a>
             </div>
           </div>
@@ -520,7 +522,7 @@
             <div class="portfolio-img"><img src="assets/img/portfolio/Eco/ecommmm.jpg" class="img-fluid"
                 alt="Eco rally dva"></div>
             <div class="portfolio-info">
-              <a href="assets/img/portfolio/Eco/ecommmm.jpg" data-gallery="portfolioGallery"
+              <a href="assets/img/portfolio/Eco/ecommmm.jpg" data-gallery="portfolioGallery1"
                 class="portfolio-lightbox preview-link" title="Mahle 2021"><i class="bx bx-plus"></i></a>
             </div>
           </div>
@@ -529,7 +531,7 @@
             <div class="portfolio-img"><img src="assets/img/portfolio/Eco/mahle-19.jpg" class="img-fluid"
                 alt="Eco rally tri"></div>
             <div class="portfolio-info">
-              <a href="assets/img/portfolio/Eco/mahle-19.jpg" data-gallery="portfolioGallery"
+              <a href="assets/img/portfolio/Eco/mahle-19.jpg" data-gallery="portfolioGallery1"
                 class="portfolio-lightbox preview-link" title="Mahle 2019"><i class="bx bx-plus"></i></a>
             </div>
           </div>
@@ -539,7 +541,7 @@
                 alt="Rally ena">
             </div>
             <div class="portfolio-info">
-              <a href="assets/img/portfolio/Rally/05postojna.jpg" data-gallery="portfolioGallery"
+              <a href="assets/img/portfolio/Rally/05postojna.jpg" data-gallery="portfolioGallery2"
                 class="portfolio-lightbox preview-link" title="Rally Postojna"><i class="bx bx-plus"></i></a>
             </div>
           </div>
@@ -549,7 +551,7 @@
                 alt="Rally dva">
             </div>
             <div class="portfolio-info">
-              <a href="assets/img/portfolio/Rally/idrija-2001.jpg" data-gallery="portfolioGallery"
+              <a href="assets/img/portfolio/Rally/idrija-2001.jpg" data-gallery="portfolioGallery2"
                 class="portfolio-lightbox preview-link" title="Rally Idrija"><i class="bx bx-plus"></i></a>
             </div>
           </div>
@@ -559,7 +561,7 @@
                 alt="Alpine ena">
             </div>
             <div class="portfolio-info">
-              <a href="assets/img/portfolio/Alpine/alpine1.jpg" data-gallery="portfolioGallery"
+              <a href="assets/img/portfolio/Alpine/alpine1.jpg" data-gallery="portfolioGallery3"
                 class="portfolio-lightbox preview-link" title="Alpine ena"><i class="bx bx-plus"></i></a>
             </div>
           </div>
@@ -569,7 +571,7 @@
                 alt="Eco rally stiri">
             </div>
             <div class="portfolio-info">
-              <a href="assets/img/portfolio/Eco/tolmin-tehnični.jpg" data-gallery="portfolioGallery"
+              <a href="assets/img/portfolio/Eco/tolmin-tehnični.jpg" data-gallery="portfolioGallery1"
                 class="portfolio-lightbox preview-link" title="Mahle 2022"><i class="bx bx-plus"></i></a>
             </div>
           </div>
@@ -578,7 +580,7 @@
             <div class="portfolio-img"><img src="assets/img/portfolio/Alpine/8.jpg" class="img-fluid" alt="Alpine dva">
             </div>
             <div class="portfolio-info">
-              <a href="assets/img/portfolio/Alpine/8.jpg" data-gallery="portfolioGallery"
+              <a href="assets/img/portfolio/Alpine/8.jpg" data-gallery="portfolioGallery3"
                 class="portfolio-lightbox preview-link" title="Alpine dva"><i class="bx bx-plus"></i></a>
             </div>
           </div>
@@ -811,19 +813,6 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <!-- Template Main JS File assets/img/portfolio/Eco/tripm_edited.jpg -->
   <script src="assets/js/main.js"></script>
-  <script>
-    function closePopup() {
-      $('.youtube-video').each(function () {
-        this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
-      });
-    }
-
-    $("#portfolio-flters").click(function () {
-      const activeFilter = document.getElementsByClassName("filter-active");
-      localStorage.activeFilter = activeFilter[0].innerText;
-    });
-
-  </script>
 </body>
 
 </html>
