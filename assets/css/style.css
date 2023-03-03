@@ -1979,3 +1979,12 @@ section {
   border-radius: 30px !important;
   border: none !important;
 }
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../font/serpentine-sans-icg-bold.ttf') format('truetype');
+}
+
+.font-custom {
+  font-family: 'MyCustomFont', sans-serif;
+}
