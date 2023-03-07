@@ -1854,3 +1854,18 @@ section {
 .height {
     height: 50px;
 }
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../font/serpentine-sans-icg-bold.ttf') format('truetype');
+}
+
+.font-custom {
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+.polzek {
+    position: relative;
+    left: 2.5vw;
+    top: -10px;
+}
