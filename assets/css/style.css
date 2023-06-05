@@ -1886,7 +1886,12 @@ section {
 
   .caroImg-pnv {
     height: 47px;
-    width: 112px;
+    width: 92px;
+  }
+
+  .caroImg-batic{
+    height: 47px;
+    width: 92px;
   }
 
   .caroImg-lupi {
