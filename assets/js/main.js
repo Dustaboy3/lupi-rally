@@ -251,7 +251,7 @@
 
 })()
 
-$(document).ready(function () {
+$(document).onLoad(function () {
   // Fakes the loading setting a timeout
   $('body').addClass('loaded');
 });
