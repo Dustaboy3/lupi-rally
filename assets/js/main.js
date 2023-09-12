@@ -251,7 +251,6 @@
 
 })()
 
-$(document).onLoad(function () {
-  // Fakes the loading setting a timeout
+window.onload = function () {
   $('body').addClass('loaded');
-});
+};
