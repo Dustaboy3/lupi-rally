@@ -250,3 +250,8 @@
   });
 
 })()
+
+$(document).ready(function () {
+  // Fakes the loading setting a timeout
+  $('body').addClass('loaded');
+});
