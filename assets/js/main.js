@@ -251,6 +251,11 @@
 
 })()
 
-window.onload = function () {
-  $('body').addClass('loaded');
-};
+$(document).ready(function () {
+  // Fakes the loading setting a timeout
+  setTimeout(function () {
+    $('body').addClass('loaded');
+    //$('#aktualno').addClass('aktualno-no');
+    //$('#aktualno-li').addClass('aktualno-no');
+  }, 2000);
+});

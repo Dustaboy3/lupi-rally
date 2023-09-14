@@ -2110,3 +2110,67 @@ section {
   transform: translateY(-100%);
   transition: all 0.3s 1s ease-out;
 }
+
+.aktualno-no {
+  display: none;
+}
+
+.aktualno {
+  padding-top: 80px;
+  background-color: white;
+}
+
+.aktualno .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.aktualno .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.aktualno .content ul li {
+  padding-left: 28px;
+  position: relative;
+}
+
+.aktualno .content ul li+li {
+  margin-top: 10px;
+}
+
+.aktualno .content ul i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 20px;
+  color: red;
+  line-height: 1;
+}
+
+.aktualno .content p:last-child {
+  margin-bottom: 0;
+}
+
+.aktualno .content .btn-learn-more {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 5px;
+  transition: 0.3s;
+  line-height: 1;
+  color: red;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  margin-top: 6px;
+  border: 2px solid red;
+}
+
+.about .content .btn-learn-more:hover {
+  background: red;
+  color: #fff;
+  text-decoration: none;
+}
