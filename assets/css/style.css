@@ -2169,8 +2169,16 @@ section {
   border: 2px solid red;
 }
 
-.about .content .btn-learn-more:hover {
+.aktualno .content .btn-learn-more:hover {
   background: red;
   color: #fff;
   text-decoration: none;
+}
+
+.aktualno-slika {
+  border-radius: 30px;
+}
+
+.aktualno-text {
+  color: red;
 }
