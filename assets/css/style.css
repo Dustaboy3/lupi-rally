@@ -2182,3 +2182,7 @@ section {
 .aktualno-text {
   color: red;
 }
+
+.container {
+  margin-top: 16px;
+}
