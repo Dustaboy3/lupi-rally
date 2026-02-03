@@ -5,7 +5,13 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     // Lazy load images that are not in the viewport
-    const lazyImages = document.querySelectorAll('img.img-fluid:not(.timeline-img):not(.testimonial-img)');
+    const placeholder =
+        "data:image/svg+xml,%3Csvg%20xmlns%3D'http://www.w3.org/2000/svg'%20width%3D'1'%20height%3D'1'%20viewBox%3D'0%200%201%201'%3E%3Crect%20width%3D'1'%20height%3D'1'%20fill%3D'%23f4f4f4'%20/%3E%3C/svg%3E";
+    // Include any image explicitly marked with data-src (e.g., updates/articles)
+    // and also generic .img-fluid images for progressive enhancement
+    const lazyImages = Array.from(
+        document.querySelectorAll('img[data-src], img.img-fluid:not(.timeline-img):not(.testimonial-img)')
+    );
 
     if ('IntersectionObserver' in window) {
         const imageObserver = new IntersectionObserver(function (entries, observer) {
@@ -22,10 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         lazyImages.forEach(function (lazyImage) {
-            // Store the original src in data-src and use a placeholder
+            // If the element already has data-src (e.g., created by content.js), keep it,
+            // otherwise convert current src to data-src and use a lightweight placeholder
             if (!lazyImage.dataset.src) {
                 lazyImage.dataset.src = lazyImage.src;
-                lazyImage.src = 'assets/img/placeholder.jpg'; // Small placeholder image
+                lazyImage.src = placeholder;
             }
             imageObserver.observe(lazyImage);
         });
@@ -87,6 +94,10 @@ document.addEventListener('DOMContentLoaded', function () {
             stylesheet.setAttribute('media', 'print');
             stylesheet.setAttribute('onload', "this.media='all'");
         }
+    });
+    document.querySelectorAll('img:not([loading])').forEach(function (img) {
+        img.setAttribute('loading', 'lazy');
+        img.setAttribute('decoding', 'async');
     });
 });
 
