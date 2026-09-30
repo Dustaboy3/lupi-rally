@@ -1,5 +1,31 @@
 window.LUPI_UPDATES = [
   {
+    id: "dolina-zelenega-zlata-2026",
+    title: "Rally Dolina zelenega zlata 2026: odstop po nesreči",
+    summary: "Na 4. Rallyju Dolina zelenega zlata v Žalcu sta Gašper Kos in Aleksander Zevnik po nesreči na hriboviti etapi morala odstopiti. Posadka je ostala varna; ekipa se pripravlja na popravilo in nadaljevanje sezone.",
+    date: "Avgust 2026",
+    dateSort: "2026-08-22",
+    location: "Žalec, Slovenija",
+    category: "Rally",
+    image: "assets/img/portfolio/Rally/2026/dolina-zelenega-zlata/dzz-2026-incident.jpg",
+    imageAlt: "Rally Dolina zelenega zlata 2026 – posadka Kos in Zevnik",
+    link: "actual.html",
+    external: false
+  },
+  {
+    id: "zelezniki-rally-2026",
+    title: "13. Rally Železniki: zmaga v Diviziji 2 in 6. mesto skupno",
+    summary: "Gašper Kos in Aleksander Zevnik sta s Peugeotom 208 Rally4 na 13. Rallyju Železniki osvojila Divizijo 2 in dosegla 6. mesto v absolutni razvrstitvi — najboljši skupni rezultat posadke doslej.",
+    date: "Julij 2026",
+    dateSort: "2026-07-05",
+    location: "Železniki, Slovenija",
+    category: "Rally",
+    image: "assets/img/portfolio/Rally/2026/zelezniki/zelezniki-2026-victory.jpg",
+    imageAlt: "13. Rally Železniki – zmaga v Diviziji 2, posadka Kos in Zevnik",
+    link: "actual.html",
+    external: false
+  },
+  {
     id: "eco-zelezniki-2025",
     title: "Eco rally Gorica 2025: 2. mesto v porabi energije",
     summary: "Na tehnično razgibanih etapah v Gorici smo zanesljivo osvojili 2. mesto v porabi energije. Uravnotežen tempo, natančna vožnja in dobra usklajenost ekipe so ponovno potrdili visoko raven pripravljenosti skozi celotno tekmo.",
